@@ -1,8 +1,3 @@
-'''
-version 0.1.2
-'''
-
-
 # Imports and Boot
 
 import pygame
