@@ -8,24 +8,24 @@ pygame.init()
 
 spritePack = {
     'simple': {
-        'stayR': [pygame.image.load(f'sprite/cat/pack/sprite_cat_stay_r_{i}.png') for i in range(4)],
-        'stayL': [pygame.image.load(f'sprite/cat/pack/sprite_cat_stay_l_{i}.png') for i in range(4)],
-        'runR': [pygame.image.load(f'sprite/cat/pack/sprite_cat_run_r_{i}.png') for i in range(4)],
-        'runL': [pygame.image.load(f'sprite/cat/pack/sprite_cat_run_l_{i}.png') for i in range(4)],
-        'jumpR': [pygame.image.load(f'sprite/cat/pack/sprite_cat_jump_r_{i}.png') for i in range(4)],
-        'jumpL': [pygame.image.load(f'sprite/cat/pack/sprite_cat_jump_l_{i}.png') for i in range(4)],
-        'fallR': [pygame.image.load(f'sprite/cat/pack/sprite_cat_fall_r_{i}.png') for i in range(4)],
-        'fallL': [pygame.image.load(f'sprite/cat/pack/sprite_cat_fall_l_{i}.png') for i in range(4)]
+        'stayR': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_stay_r_{i}.png') for i in range(4)],
+        'stayL': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_stay_l_{i}.png') for i in range(4)],
+        'runR': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_run_r_{i}.png') for i in range(4)],
+        'runL': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_run_l_{i}.png') for i in range(4)],
+        'jumpR': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_jump_r_{i}.png') for i in range(4)],
+        'jumpL': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_jump_l_{i}.png') for i in range(4)],
+        'fallR': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_fall_r_{i}.png') for i in range(4)],
+        'fallL': [pygame.image.load(f'./sprite/cat/pack/sprite_cat_fall_l_{i}.png') for i in range(4)]
     },
     'super': {
-        'stayR': [pygame.image.load(f'sprite/cat/pack/sprite_scat_stay_r_{i}.png') for i in range(4)],
-        'stayL': [pygame.image.load(f'sprite/cat/pack/sprite_scat_stay_l_{i}.png') for i in range(4)],
-        'runR': [pygame.image.load(f'sprite/cat/pack/sprite_scat_run_r_{i}.png') for i in range(4)],
-        'runL': [pygame.image.load(f'sprite/cat/pack/sprite_scat_run_l_{i}.png') for i in range(4)],
-        'jumpR': [pygame.image.load(f'sprite/cat/pack/sprite_scat_jump_r_{i}.png') for i in range(4)],
-        'jumpL': [pygame.image.load(f'sprite/cat/pack/sprite_scat_jump_l_{i}.png') for i in range(4)],
-        'fallR': [pygame.image.load(f'sprite/cat/pack/sprite_scat_fall_r_{i}.png') for i in range(4)],
-        'fallL': [pygame.image.load(f'sprite/cat/pack/sprite_scat_fall_l_{i}.png') for i in range(4)]
+        'stayR': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_stay_r_{i}.png') for i in range(4)],
+        'stayL': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_stay_l_{i}.png') for i in range(4)],
+        'runR': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_run_r_{i}.png') for i in range(4)],
+        'runL': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_run_l_{i}.png') for i in range(4)],
+        'jumpR': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_jump_r_{i}.png') for i in range(4)],
+        'jumpL': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_jump_l_{i}.png') for i in range(4)],
+        'fallR': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_fall_r_{i}.png') for i in range(4)],
+        'fallL': [pygame.image.load(f'./sprite/cat/pack/sprite_scat_fall_l_{i}.png') for i in range(4)]
     }
 }
 
@@ -197,7 +197,7 @@ def redraw_game_window():
 runGame = True
 while runGame:
 
-    clock.tick(6)  # FPS
+    clock.tick(10)  # FPS
 
     # bye bye
     for event in pygame.event.get():
